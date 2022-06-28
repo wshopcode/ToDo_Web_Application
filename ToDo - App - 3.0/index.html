@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Web Application - wshopcode</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- stylesheet for icons - iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p><span id="datetime"></span></p><br>
+        <div class="task-input">
+            <img src="bars-icon5.png" height="25px" alt="icon">
+            <input type="text" placeholder="Add a new task">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+</html>
